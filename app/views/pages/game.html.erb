@@ -1,0 +1,10 @@
+<h3>Game Start</h3>
+
+<h1><%= @grid %></h1>
+
+<form action="score" method="get">
+  <%= hidden_field_tag :grid, @grid %>
+  <%= hidden_field_tag :start_time, @start_time %>
+  <input type="text" name="query" placeholder="your answer">
+  <input type="submit">
+</form>
